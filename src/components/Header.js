@@ -9,9 +9,9 @@ function Header() {
           Pizza Store
         </Link>
       </h1>
-      <h2 className="header-text">
+      <h1 className="header-text">
         <Link to="/Cart">Cart</Link>
-      </h2>
+      </h1>
     </div>
   );
 }

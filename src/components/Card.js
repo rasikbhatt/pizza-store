@@ -16,7 +16,7 @@ const { dispatch } = useGlobalContext();
     
     <div className="card" >
       {console.log(id)}
-      <h2>{name}</h2>
+      <h1>{name}</h1>
       <img src={img_url} alt={name}  />
       <div className="cardDetails">
       <p>{description}</p>
