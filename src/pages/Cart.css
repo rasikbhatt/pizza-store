@@ -1,0 +1,45 @@
+.basket-status{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 16px 0;
+    
+}
+.basket-status h1{
+    margin: 16px 0;
+}
+.basket-status h2{
+    margin: 16px 0;
+
+}
+
+
+.basket-status button{
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    background-color: rgba(255, 182, 193, 0.7);
+    cursor: pointer;
+}
+
+.amount{
+    text-align: center;
+    margin: 20px 0 30px 0;
+}
+.amount h3{
+    margin: 16px;
+}
+
+.amount button{
+    background-color: rgba(255, 182, 193, 0.7);
+    border-radius: 10px;
+    font-weight: bold;
+    color: black;
+    padding: 10px;
+    border: none;
+}
+
