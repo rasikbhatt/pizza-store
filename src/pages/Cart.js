@@ -32,17 +32,20 @@ function Cart() {
             <div
               key={id}
               style={{
-                width: "300px",
+                width: "400px",
                 padding: "10px 0px",
                 margin: "10px 5px",
                 textAlign: "center",
                 borderRadius: "10px",
                 border: "2px solid #BFD1D9",
-                boxShadow: "0px 0px 12px 6px rgba(0,0,0,0.52)"
+                boxShadow: "0px 0px 12px 6px rgba(0,0,0,0.52)",
+                fontWeight:"600",
+                fontSize:"20px"
+
 
               }}
             >
-              <h2>{name}</h2>
+              <h1>{name}</h1>
               <img src={img_url} alt={name} width="100%" />
               <p>{description}</p>
               <p>Type : {isVeg ? "Veg" : "Non Veg"}</p>
@@ -62,7 +65,7 @@ function Cart() {
       </div>
         <hr/>
       <div className="amount">
-        <h3>Total amount: INR {state.total} /-</h3>
+        <h2>Total amount: INR {state.total} /-</h2>
       {state.basket.length >= 1 && (
         <button onClick={clearCart}>Clear cart</button>
       )}

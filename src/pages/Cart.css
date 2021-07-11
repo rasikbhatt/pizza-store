@@ -24,13 +24,15 @@
     font-weight: bold;
     background-color: rgba(255, 182, 193, 0.7);
     cursor: pointer;
+    width: 160px;
+    font-size: 20px;
 }
 
 .amount{
     text-align: center;
     margin: 20px 0 30px 0;
 }
-.amount h3{
+.amount h2{
     margin: 16px;
 }
 
@@ -41,5 +43,7 @@
     color: black;
     padding: 10px;
     border: none;
+    width: 160px;
+    font-size: 20px;
 }
 
