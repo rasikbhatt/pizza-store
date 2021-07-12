@@ -8,15 +8,17 @@ function Dashboard() {
   const [cpyPizza, setCpyPizz] = useState([]);
 
    function sortPizzaList(base){
-    let sortedList;
+    let sortedList=pizzaList;
     let newPizzArr;
+    let newList;
     if (base === "price") {
-      sortedList = pizzaList.sort((a, b) => (a.price > b.price ? 1 : -1));
-      setPizzaList(sortedList);
+      newList= sortedList.sort((a, b) => (a.price > b.price ? 1 : -1));
+      setPizzaList([...newList]);
+      console.log(newList)
       console.log(pizzaList)
     } else if (base === "rating") {
       sortedList = pizzaList.sort((a, b) => (a.rating < b.rating ? 1 : -1));
-      setPizzaList(sortedList);
+      setPizzaList([...sortedList]);
       console.log(sortedList);
     } else if (base === "veg") {
       newPizzArr = cpyPizza.filter((item) => item.isVeg);
